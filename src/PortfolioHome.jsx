@@ -10,7 +10,6 @@ import {
   Container,
   Chip,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import DownloadIcon from "@mui/icons-material/Download";
 import profileImg from "./photo.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
