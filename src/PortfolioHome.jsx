@@ -18,7 +18,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
-
+import ratef from "./ratefllow.png";
+import screen from "./Screenshot 2026-02-07 214546.png";
+import getSc from "./GethubScreen.png"
 const ACCENT = "#43F5B5"; // قريب من الأخضر بالصورة
 const BG1 = "#070B14";
 const BG2 = "#0D1426";
@@ -33,7 +35,7 @@ export default function PortfolioHome() {
     live: "https://bright-raindrop-8ca2f6.netlify.app/",
     github: "https://github.com/mhd370/rateflow",
     // ضع صورة لاحقاً (اختياري)
-    image: "/thumb-rateflow.png",
+    image: ratef,
     tags: ["Dashboard", "Finance", "MUI"],
   },
   {
@@ -43,7 +45,7 @@ export default function PortfolioHome() {
       "A job application tracking app to organize applications, statuses, notes, and follow-ups in a clean interface.",
     live: "https://starlit-pegasus-56183c.netlify.app/",
     github: "https://github.com/mhd370/job-tracker-pro",
-    image: "/thumb-jobtracker.png",
+    image: screen,
     tags: ["CRUD", "Productivity", "React"],
   },
   {
@@ -53,7 +55,7 @@ export default function PortfolioHome() {
       "Explore my repositories, React projects, and ongoing work — with clean commits and project structure.",
     live: "https://github.com/mhd370",
     github: "https://github.com/mhd370",
-    image: "/thumb-github.png",
+    image: getSc,
     tags: ["GitHub", "Code", "Portfolio"],
   },
 ];
@@ -143,10 +145,10 @@ export default function PortfolioHome() {
             />
           </Stack>
 
-          {/* Mobile menu */}
+          {/* Mobile menu
           <IconButton sx={{ display: { xs: "inline-flex", md: "none" }, ml: 1 }}>
             <MenuIcon sx={{ color: "white" }} />
-          </IconButton>
+          </IconButton> */}
         </Toolbar>
       </AppBar>
 
@@ -437,17 +439,20 @@ href="https://wa.me/963981584035?text=Hi%20Mohmed,%20I%20came%20across%20your%20
 
             <Box sx={{ position: "absolute", inset: 0, p: 2 }}>
               <Typography sx={{ fontWeight: 900, letterSpacing: 0.4 }}>
-                {p.title}
+                
               </Typography>
-              <Typography sx={{ mt: 0.6, fontSize: 13, color: "rgba(255,255,255,0.70)" }}>
-                {p.subtitle}
-              </Typography>
+              
             </Box>
           </Box>
 
           {/* Content */}
           <Box sx={{ p: 2.2 }}>
             <Typography sx={{ color: "rgba(255,255,255,0.78)", lineHeight: 1.7, minHeight: 72 }}>
+              <Typography sx={{ mt: 0.6, fontSize: 13, color: "rgba(255,255,255,0.70)",fontWeight:"bold" }}>
+                 {p.title}
+               {p.subtitle}
+              </Typography>
+            
               {p.description}
             </Typography>
 
